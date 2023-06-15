@@ -11,7 +11,7 @@ func _ready():
 func game_over():
 	$ScoreTimer.stop()
 	$MobTimer.stop()
-	$HUD.show_game_over()
+	$HUD.show_game_over(score)
 	$Music.stop()
 	$DeathSound.play()
 
